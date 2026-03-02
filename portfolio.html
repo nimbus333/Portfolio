@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EFDECD;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        nav a,
+        footer a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .projects img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a class="active" href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="signin.html">Sign in</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+        <div class="projects">
+            <img src="video_game.png" alt="Project 1">
+            <img src="skier.webp" alt="Project 2">
+        </div>
+    </div>
+
+    <footer>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+    </footer>
+</body>
+
+</html>

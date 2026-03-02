@@ -27,12 +27,22 @@
             margin-bottom: 20px;
         }
 
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
         nav a {
-            margin: 0 20px;
             text-decoration: none;
             color: black;
-            font-size: 30px;
+            font-size: 18px;
             font-weight: bold;
+        }
+
+        nav a.active {
+            text-decoration: underline;
         }
 
         section {
@@ -60,6 +70,7 @@
             height: auto;
             border-radius: 10px;
         }
+
         .contact {
             background-color: white;
             width: 80%;
@@ -72,15 +83,34 @@
             justify-content: center;
             gap: 40px;
             margin-top: 30px;
-            
         }
+
         .contact img {
             width: 100px;
-            height:auto;
+            height: auto;
             border-radius: 10px;
         }
+
         h2 {
             font-size: 35px;
+        }
+
+        footer {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer a {
+            margin: 0 16px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -93,8 +123,12 @@
         </header>
 
         <nav>
+            <a class="active" href="index.html">Home</a>
             <a href="aboutme.html">About</a>
-            <a href="index.html">Projects</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="signin.html">Sign in</a>
+            <a href="signup.html">Signup</a>
         </nav>
     </div>
 
@@ -106,19 +140,25 @@
             <img src="skier.webp" alt="Snow App Project">
         </div>
         <h2> Find Me On: </h2>
-        <div class ="contact">
-            <a href="https://github.com/nimbus333" target = "_blank">
-            <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png">
+        <div class="contact">
+            <a href="https://github.com/nimbus333" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png" alt="GitHub">
             </a>
-            <a href="www.linkedin.com/in/fernando-sotelo-33606a363" target = "_blank">
-            <img src="https://pngimg.com/d/linkedIn_PNG15.png">
+            <a href="https://www.linkedin.com/in/fernando-sotelo-33606a363" target="_blank">
+                <img src="https://pngimg.com/d/linkedIn_PNG15.png" alt="LinkedIn">
             </a>
             <a href="https://app.joinhandshake.com/profiles/n22mn9" target="_blank">
-            <img src="https://play-lh.googleusercontent.com/0fvQuOYITqCNi9cDAUx8LL-_WPOUhwKR8APSMONlhm41jW-TQ0APHNXPuNELE-RblQ">
+                <img src="https://play-lh.googleusercontent.com/0fvQuOYITqCNi9cDAUx8LL-_WPOUhwKR8APSMONlhm41jW-TQ0APHNXPuNELE-RblQ" alt="Handshake">
             </a>
         </div>
 
     </section>
+
+    <footer>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+    </footer>
 </body>
 
 </html>

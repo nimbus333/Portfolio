@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #EFDECD;
         }
+
         h2 {
             font-size: 35px;
         }
@@ -40,12 +41,22 @@
             margin-bottom: 20px;
         }
 
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
         nav a {
-            margin: 0 20px;
             text-decoration: none;
             color: black;
-            font-size: 30px;
+            font-size: 18px;
             font-weight: bold;
+        }
+
+        nav a.active {
+            text-decoration: underline;
         }
 
         section {
@@ -66,15 +77,10 @@
             height: auto;
             border-radius: 10px;
         }
-        
-        .profile p {
-            font-size: 25px;
-            font-weight: 5px;
-            text-align: left;
-        }
+
+        .profile p,
         .profile ul {
             font-size: 25px;
-            font-weight: 5px;
             text-align: left;
         }
 
@@ -84,7 +90,23 @@
             text-align: left;
         }
 
-        
+        footer {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer a {
+            margin: 0 16px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -96,32 +118,40 @@
         </header>
 
         <nav>
-            <a href="aboutme.html">About</a>
-            <a href="index.html">Projects</a>
+            <a href="index.html">Home</a>
+            <a class="active" href="aboutme.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="signin.html">Sign in</a>
+            <a href="signup.html">Signup</a>
         </nav>
     </div>
 
     <section>
-    <h2>About Me</h2>
-    <div class="body-container">
-        <div class="profile">
-            <img src="anotherme.webp">
-            <div class="text-content">
-                <p>Hello! My Name is Fernando. I am a second year
-                    Computer Science Student at the University of Idaho.
-                    My hobbies include the following:</p>
-                <ul>
-                    <li>Snowboarding</li>
-                    <li>Video Games</li>
-                    <li>PickleBall</li>
-                    <li>Doomscrolling</li>
-                </ul>
+        <h2>About Me</h2>
+        <div class="body-container">
+            <div class="profile">
+                <img src="anotherme.webp" alt="Fernando">
+                <div class="text-content">
+                    <p>Hello! My Name is Fernando. I am a second year
+                        Computer Science Student at the University of Idaho.
+                        My hobbies include the following:</p>
+                    <ul>
+                        <li>Snowboarding</li>
+                        <li>Video Games</li>
+                        <li>PickleBall</li>
+                        <li>Doomscrolling</li>
+                    </ul>
+                </div>
             </div>
-
-
-        </div>   
-    </div>
+        </div>
     </section>
+
+    <footer>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+    </footer>
 </body>
 
 </html>

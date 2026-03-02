@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign in</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EFDECD;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        nav a,
+        footer a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+
+        input,
+        button {
+            padding: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign in</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="signin.html">Sign in</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+
+        <form>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password">
+
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+
+    <footer>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookies.html">Cookie Policy</a>
+    </footer>
+</body>
+
+</html>
